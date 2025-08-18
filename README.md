@@ -27,7 +27,7 @@ All services are **automatically started and orchestrated with Docker Compose**,
 ## Architecture
 | Component      | Purpose                              |
 |----------------|--------------------------------------|
-| Spring Boot    | Core backend microservice framework  |
+| Spring Boot    | Core backend  framework  |
 | Apache Kafka   | Messaging and event-driven system    |
 | Redis          | Caching and message queue support    |
 | PostgreSQL     | Relational database with persistence |
@@ -40,3 +40,4 @@ All services are **automatically started and orchestrated with Docker Compose**,
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
