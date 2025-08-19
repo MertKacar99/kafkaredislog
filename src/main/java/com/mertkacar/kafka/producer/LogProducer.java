@@ -8,8 +8,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class LogProducer {
     private final KafkaTemplate<String, String> kafkaTemplate;
-    public void sendLog(String message) {
-        kafkaTemplate.send("app-logs", message);
-        System.out.println("Kafka’ya log gönderildi: " + message);
+    public void sendLog(String key, String message) {
+        kafkaTemplate.send("logs", key, message);
     }
 }

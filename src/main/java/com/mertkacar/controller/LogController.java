@@ -20,7 +20,7 @@ public class LogController {
 
     @PostMapping("/sendLog")
     public String createLog(@RequestBody String message) {
-        logProducer.sendLog(message);
+        logProducer.sendLog(message , "message");
         log.info("Log gönderildi: " + message);
         return "log gönderildi " + message;
     }

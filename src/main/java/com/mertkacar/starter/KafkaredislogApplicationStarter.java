@@ -18,8 +18,5 @@ public class KafkaredislogApplicationStarter {
       new SpringApplicationBuilder(KafkaredislogApplicationStarter.class)
               .initializers(new ComposeInitializer())
               .run(args) ;
-
-
 	}
-
 }
